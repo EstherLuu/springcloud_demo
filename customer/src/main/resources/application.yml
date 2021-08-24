@@ -1,0 +1,17 @@
+# 应用名称
+# spring.application.name=customer
+# 应用服务 WEB 访问端口
+# server.port=8080
+
+eureka:
+  client:
+    serviceUrl:
+      #服务注册地址
+      defaultZone: http://localhost:8888/eureka/
+server:
+  #运行端口
+  port: 8764
+spring:
+  application:
+    #服务注册名称
+    name: service-consumer

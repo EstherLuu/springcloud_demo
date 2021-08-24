@@ -1,0 +1,20 @@
+# 应用名称
+# spring.application.name=eureka-server
+# 应用服务 WEB 访问端口
+# server.port=8080
+
+server:
+  #运行端口
+  port: 8888
+eureka:
+  instance:
+    #注册ip
+    hostname: localhost
+  client:
+    #禁止自己当做服务注册
+    register-with-eureka: false
+    #屏蔽注册信息
+    fetch-registry: false
+    #注册url
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
